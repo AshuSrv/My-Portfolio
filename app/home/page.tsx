@@ -11,7 +11,7 @@ import { Achievements } from "@/app/components/Achievements";
 import { Contact } from "@/app/components/Contact";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
-import { Education } from "../components/Education";
+// import { Education } from "../components/Education";
 
 export default function HomePage() {
   return (
@@ -26,7 +26,7 @@ export default function HomePage() {
       </Head>
 
       <Navbar />
-      <div className="bg-gray-900">
+      <div className="bg-gray-950">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -46,9 +46,9 @@ export default function HomePage() {
           <SectionWrapper>
             <Achievements />
           </SectionWrapper>
-          <SectionWrapper>
+          {/* <SectionWrapper>
             <Education />
-          </SectionWrapper>
+          </SectionWrapper> */}
           <SectionWrapper>
             <Contact />
           </SectionWrapper>
