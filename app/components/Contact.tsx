@@ -36,23 +36,13 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-20 text-white relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h2
-          className="text-5xl font-bold mb-16 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+        <h2 className="text-5xl font-bold mb-16 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
           Get in Touch
-        </motion.h2>
+        </h2>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <motion.div
-            className="relative group"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
+          <div className="relative group">
             <form
               ref={formRef}
               onSubmit={sendEmail}
@@ -94,7 +84,7 @@ export const Contact = () => {
                   disabled={isSending}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-semibold flex items-center justify-center gap-2"
+                  className="w-full py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-semibold flex items-center justify-center gap-2 cursor-pointer"
                 >
                   {isSending ? (
                     "Sending..."
@@ -122,7 +112,7 @@ export const Contact = () => {
                 )}
               </div>
             </form>
-          </motion.div>
+          </div>
 
           {/* Contact Info */}
           <motion.div
