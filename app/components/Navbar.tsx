@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
-  const sections = ["hero", "experience", "projects", "skills", "contact"];
+  const sections = [
+    "hero",
+    "experience",
+    "projects",
+    "skills",
+    "achievements",
+    "contact",
+  ];
 
   useEffect(() => {
     const observerOptions = {
